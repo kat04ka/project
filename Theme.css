@@ -1,0 +1,36 @@
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.ag-paragraph,
+.ag-heading--1,
+.feature-item p.ag-paragraph,
+.ag-captions,
+ul.specs__column span.ag-captions,
+.ag-heading--2,
+.footer .ag-link {
+  color: var(--text);
+}
+
+.comparison-scroll .col-md-4:hover .ag-table-title,
+.comparison-scroll .col-md-4:hover .specs__column {
+  background-color: var(--compare-bg-hover);
+  box-shadow: var(--compare-shadow-hover);
+}
+
+.comparison-scroll .col-md-4.is-active .ag-table-title,
+.comparison-scroll .col-md-4.is-active .specs__column {
+  background-color: var(--bg);
+  box-shadow: var(--compare-shadow-active);
+  border: 1px solid var(--color-divider-1);
+  z-index: 2;
+}
+
+[data-bs-theme="dark"] {
+  --compare-bg-hover: #0f172a;
+  --compare-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.6);
+
+  --compare-bg-active: #111827;
+  --compare-shadow-active: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
