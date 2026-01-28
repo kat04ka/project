@@ -43,6 +43,7 @@ body {
 [data-bs-theme="dark"] .ag-heading--2,
 [data-bs-theme="dark"] .footer .ag-link,
 [data-bs-theme="dark"] .ag-table-title {
-  color: var(--text);
+  color: var(--text, #ffffff);
 }
+
 
