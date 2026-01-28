@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-
-
-
 .icon-dark {
   display: none;
 }
@@ -403,4 +400,5 @@ ul span.ag-captions {
     padding-right: var(--space-xxs);
   }
 }
+
 
