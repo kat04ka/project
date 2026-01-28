@@ -46,7 +46,7 @@
   z-index: 1020;
   backdrop-filter: blur(15px);
   background: rgba(255, 255, 255, .4);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-pill, 0);
 }
 
 .btn-custom:hover {
