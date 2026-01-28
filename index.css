@@ -397,8 +397,6 @@ ul span.ag-captions {
 
   .connect__content {
     padding-left: var(--space-xxs);
-    padding-right: var(--space-xxs);
+    padding-right: var(--space-xxs, 0);
   }
 }
-
-
