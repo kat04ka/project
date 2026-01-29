@@ -13,26 +13,25 @@ body {
 .comparison-scroll .col-md-4.is-active .specs__column {
   background-color: var(--bg);
   box-shadow: var(--compare-shadow-active);
-  border: 1px solid var(--color-divider);
-  z-index: 2;
+  border: 1px solid var(--color-divider-1);
 }
 
 [data-bs-theme="light"] {
   --compare-bg-hover: #ffffff;
-  --compare-shadow-hover: 0 6px 18px rgba(15, 23, 42, 0.08);
+  --compare-shadow-hover: 0 6px 18px rgba(15, 23, 42, .08);
 
   --compare-bg-active: #ffffff;
-  --compare-shadow-active: 0 10px 30px rgba(15, 23, 42, 0.12);
+  --compare-shadow-active: 0 10px 30px rgba(15, 23, 42, .12);
 
   --compare-border-active: #e9e9e9;
 }
 
 [data-bs-theme="dark"] {
   --compare-bg-hover: #0f172a;
-  --compare-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.6);
+  --compare-shadow-hover: 0 6px 18px rgba(0, 0, 0, .6);
 
   --compare-bg-active: #111827;
-  --compare-shadow-active: 0 6px 18px rgba(0, 0, 0, 0.8);
+  --compare-shadow-active: 0 6px 18px rgba(0, 0, 0, .8);
 }
 
 [data-bs-theme="dark"] .ag-paragraph,
@@ -42,8 +41,7 @@ body {
 [data-bs-theme="dark"] ul.specs__column span.ag-captions,
 [data-bs-theme="dark"] .ag-heading--2,
 [data-bs-theme="dark"] .footer .ag-link,
-[data-bs-theme="dark"] .ag-table-title {
+[data-bs-theme="dark"] .ag-table-title,
+[data-bs-theme="dark"] .ag-link {
   color: var(--text, #ffffff);
 }
-
-
