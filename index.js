@@ -30,21 +30,13 @@ columns.forEach((column) => {
   });
 });
 
-document.querySelectorAll(".js-scroll").forEach((link) => {
-  link.addEventListener("click", (e) => {
-    const targetId = link.getAttribute("href");
-    const targetEl = document.querySelector(targetId);
-    if (!targetEl) return;
+document.addEventListener('DOMContentLoaded', () => {
+    const offcanvasEl = document.getElementById('mobileNav');
+    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
 
-    e.preventDefault();
-
-    const offcanvas = document.querySelector(".offcanvas.show");
-    if (offcanvas) {
-      bootstrap.Offcanvas.getInstance(offcanvas).hide();
-    }
-
-    setTimeout(() => {
-      targetEl.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+    offcanvasEl.querySelectorAll('.js-scroll').forEach(link => {
+      link.addEventListener('click', () => {
+        bsOffcanvas.hide();
+      });
+    });
   });
-});
