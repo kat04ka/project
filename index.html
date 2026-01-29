@@ -46,12 +46,33 @@
   <body>
     <input type="checkbox" id="themeToggle" class="theme-toggle" hidden />
 
-    <header class="header-fixed">
-      <nav class="navbar navbar-expand-lg pt-space-xs pb-space-4xl">
-        <div class="container-xxl">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container-xxl align-items-center">
           <a class="navbar-brand ag-logo" href="#">Area</a>
 
-          <div class="ms-auto d-flex align-items-center me-3">
+          <div
+            class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+          >
+            <ul
+              class="navbar-nav gap-lg px-space-xs py-space-md nav-links-wrapper"
+            >
+              <li class="nav-item">
+                <a class="nav-link ag-link p-0" href="#benefits">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ag-link p-0" href="#specs">Specifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ag-link p-0" href="#steps">How-to</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ag-link p-0" href="#connect">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center gap-sm ms-auto">
             <label
               for="themeToggle"
               class="theme-switch btn btn-outline-secondary btn-lg d-inline-flex align-items-center"
@@ -59,113 +80,93 @@
               <span class="icon-light">☀️</span>
               <span class="icon-dark">🌙</span>
             </label>
-          </div>
 
-          <div
-            class="nav-links-wrapper d-none d-lg-flex justify-content-center align-items-center"
-          >
-            <ul class="navbar-nav gap-lg px-space-xs py-space-md">
-              <li>
-                <a class="nav-link p-0 ag-link" href="#benefits">Benefits</a>
-              </li>
-              <li>
-                <a class="nav-link p-0 ag-link" href="#specs">Specifications</a>
-              </li>
-              <li><a class="nav-link p-0 ag-link" href="#steps">How-to</a></li>
-              <li>
-                <a class="nav-link p-0 ag-link" href="#connect">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <a
-            class="btn btn-custom d-none d-lg-inline-flex align-items-center ag-link gap-xxxs"
-            href="#"
-          >
-            Learn More
-            <img class="header_arrow" src="img/arrow.png" alt="" />
-          </a>
-
-          <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobileNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-        <div
-          class="offcanvas offcanvas-end d-lg-none"
-          tabindex="-1"
-          id="mobileNav"
-          data-bs-scroll="true"
-          data-bs-focus="false"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title ag-logo">Area</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-            ></button>
-          </div>
-
-          <div
-            class="offcanvas-body ag-link d-flex flex-column gap-3xl align-items-start"
-          >
-            <ul class="navbar-nav gap-lg">
-              <li>
-                <a class="nav-link js-scroll" href="#benefits">Benefits</a>
-              </li>
-              <li>
-                <a class="nav-link js-scroll" href="#specs">Specifications</a>
-              </li>
-              <li><a class="nav-link js-scroll" href="#steps">How-to</a></li>
-              <li>
-                <a class="nav-link js-scroll" href="#connect">Contact Us</a>
-              </li>
-            </ul>
-
-            <a class="btn btn-custom" href="#">
+            <a
+              class="btn btn-custom d-none d-lg-inline-flex align-items-center ag-link gap-xxxs"
+              href="#"
+            >
               Learn More
               <img class="header_arrow" src="img/arrow.png" alt="" />
             </a>
+
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
       </nav>
+
+      <div
+        class="offcanvas offcanvas-end d-lg-none"
+        tabindex="-1"
+        id="mobileNav"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title ag-logo">Area</h5>
+          <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column gap-3xl">
+          <ul class="navbar-nav gap-lg">
+            <li class="nav-item">
+              <a class="nav-link ag-link js-scroll" href="#benefits">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ag-link js-scroll" href="#specs">Specifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ag-link js-scroll" href="#steps">How-to</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ag-link js-scroll" href="#connect">Contact Us</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-custom mt-auto" href="#">
+            Learn More
+            <img class="header_arrow" src="img/arrow.png" alt="" />
+          </a>
+        </div>
+      </div>
     </header>
 
-    <section id="hero">
-      <div class="container-xxl">
-        <div class="d-flex flex-column gap-5xl pt-space-6xl">
-          <h2 class="ag-display text-center">Browse everything.</h2>
+    <main class="main">
+      <section id="hero">
+        <div class="container-xxl">
+          <div class="d-flex flex-column gap-5xl pt-space-6xl">
+            <h2 class="ag-display text-center">Browse everything.</h2>
 
-          <div class="hero-visual">
-            <div class="hero-bg"></div>
+            <div class="hero-visual">
+              <div class="hero-bg"></div>
 
-            <div class="hero-mask">
-              <picture>
-                <source
-                  srcset="img/hero-desktop.png"
-                  media="(min-width: 1200px)"
-                />
+              <div class="hero-mask">
+                <picture>
+                  <source
+                    srcset="img/hero-desktop.png"
+                    media="(min-width: 1200px)"
+                  />
 
-                <source srcset="img/hero-ipad.png" media="(min-width: 785px)" />
-                <img
-                  src="img/hero-mobile.png"
-                  alt="hero preview"
-                  class="hero-image"
-                />
-              </picture>
+                  <source
+                    srcset="img/hero-ipad.png"
+                    media="(min-width: 785px)"
+                  />
+                  <img
+                    src="img/hero-mobile.png"
+                    alt="hero preview"
+                    class="hero-image"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <main class="main">
       <section class="logo__cloud">
         <div class="container-xxl">
           <div class="d-flex flex-column gap-lg py-space-2xl">
@@ -734,5 +735,3 @@
     <script src="theme.js"></script>
   </body>
 </html>
-
-
