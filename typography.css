@@ -1,0 +1,91 @@
+.ag-display--stats {
+  font-family: var(--font-base);
+  font-size: var(--ag-display--stats-size);
+  line-height: var(--ag-display--stats-line);
+  font-weight: var(--ag-display--stats-weight);
+  letter-spacing: var(--ag-display--stats-spacing);
+  color: var(--color-accent-6);
+}
+
+.ag-display {
+  font-family: var(--font-display);
+  font-size: var(--ag-display-size);
+  line-height: var(--ag-display-line);
+  font-weight: var(--ag-display-weight);
+  letter-spacing: var(--ag-display-spacing);
+}
+
+.ag-heading--1 {
+  font-family: var(--font-display);
+  font-size: var(--ag-heading-1-size);
+  line-height: var(--ag-heading-1-line);
+  font-weight: var(--ag-heading-1-weight);
+  letter-spacing: var(--ag-heading-1-spacing);
+  color: var(--color-headline);
+}
+
+.ag-heading--2 {
+  font-family: var(--font-display);
+  font-size: var(--ag-heading-2-size);
+  line-height: var(--ag-heading-2-line);
+  font-weight: var(--ag-heading-2-weight);
+  letter-spacing: var(--ag-heading-2-spacing);
+  color: var(--color-headline);
+}
+
+.ag-heading--3 {
+  font-family: var(--font-display);
+  font-size: var(--ag-heading-3-size);
+  line-height: var(--ag-heading-3-line);
+  font-weight: var(--ag-heading-3-weight);
+  letter-spacing: var(--ag-heading-3-spacing);
+}
+
+.ag-paragraph {
+  font-family: var(--font-base);
+  font-size: var(--ag-paragraph-size);
+  line-height: var(--ag-paragraph-line);
+  font-weight: var(--ag-paragraph-weight);
+  letter-spacing: var(--ag-paragraph-spacing);
+  color: var(--color-paragraph);
+}
+
+.ag-link {
+  font-family: var(--font-base);
+  font-size: var(--ag-link-size);
+  line-height: var(--ag-link-line);
+  font-weight: var(--ag-link-weight);
+  letter-spacing: var(--ag-link-spacing);
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+.ag-link--on-accent {
+  color: var(--color-on-accent-1);
+}
+
+.ag-captions {
+  font-family: var(--font-mono);
+  font-size: var(--ag-captions-size);
+  line-height: var(--ag-captions-line);
+  font-weight: var(--ag-captions-weight);
+  letter-spacing: var(--ag-captions-spacing);
+  color: var(--color-captions);
+}
+
+.ag-logo {
+  font-family: var(--font-base);
+  font-size: var(--ag-logo-size);
+  line-height: var(--ag-logo-line);
+  font-weight: var(--ag-logo-weight);
+  letter-spacing: var(--ag-logo-spacing);
+}
+
+.ag-table-title {
+  font-family: var(--font-base);
+  font-size: var(--ag-table-title-size);
+  line-height: var(--ag-table-title-line);
+  font-weight: var(--ag-table-title-weight);
+  letter-spacing: var(--ag-table-title-spacing);
+  color: var(--color-accent-5);
+}
