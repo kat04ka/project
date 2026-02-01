@@ -17,10 +17,6 @@
   }
 }
 
-.test {
-  
-}
-
 header {
   position: relative;
 
@@ -117,6 +113,9 @@ header {
 }
 
 .specs-section {
+  .comparison-scroll {
+    overflow-x: auto;
+  }
 }
 
 .comparison-scroll,
