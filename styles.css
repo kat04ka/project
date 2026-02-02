@@ -138,6 +138,8 @@ header .navbar .nav-links-wrapper {
 .specs__column-wrapper {
   position: relative;
   cursor: pointer;
+  min-width: 267px;
+  flex: 0 0 auto;
 }
 .specs__column-wrapper:hover .ag-table-title, .specs__column-wrapper:hover .specs__column {
   background-color: var(--compare-bg-hover);
@@ -268,6 +270,10 @@ header .navbar .nav-links-wrapper {
   }
   .specs__head {
     padding: var(--space-4xl) var(--space-xxs);
+  }
+  .specs__column-wrapper {
+    width: 267px;
+    max-width: 267px;
   }
   .pr-space-4xl {
     padding-right: 0;
