@@ -1,0 +1,37 @@
+@mixin bs-button(
+  $bg,
+  $bg-hover,
+  $border: transparent
+) {
+  --bs-btn-bg: #{$bg};
+  --bs-btn-hover-bg: #{$bg-hover};
+  --bs-btn-border-color: #{$border};
+}
+
+.btn-secondary {
+  @include bs-button(
+    var(--color-accent-2),
+    var(--color-accent-3)
+  );
+}
+
+.btn-cta {
+  --bs-btn-bg: var(--color-accent-1);
+  --bs-btn-hover-bg: var(--color-accent-3);
+
+  color: var(--color-on-accent-1);
+  padding: var(--space-xxs) var(--space-xs);
+  border-radius: var(--radius-pill);
+
+  &__arrow {
+    transition: transform 0.2s ease-out;
+  }
+
+  &:hover {
+    color: var(--color-on-accent-1);
+
+    .btn-cta__arrow {
+      transform: translateY(-4px);
+    }
+  }
+}

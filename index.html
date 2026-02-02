@@ -82,11 +82,11 @@
             </label>
 
             <a
-              class="btn btn-custom d-none d-lg-inline-flex align-items-center ag-link gap-xxxs"
+              class="btn btn-cta d-none d-lg-inline-flex align-items-center ag-link gap-xxxs"
               href="#"
             >
               Learn More
-              <img class="header_arrow" src="img/arrow.png" alt="" />
+              <img class="btn-cta__arrow" src="img/arrow.png" alt="" />
             </a>
 
             <button
@@ -142,15 +142,15 @@
     </header>
 
     <main class="main">
-      <section id="hero">
+      <section class="hero">
         <div class="container-xxl">
           <div class="d-flex flex-column gap-5xl pt-space-6xl">
             <h2 class="ag-display text-center">Browse everything.</h2>
 
-            <div class="hero-visual">
-              <div class="hero-bg"></div>
+            <div class="hero__visual">
+              <div class="hero__background"></div>
 
-              <div class="hero-mask">
+              <div class="hero__mask">
                 <picture>
                   <source
                     srcset="img/hero-desktop.png"
@@ -164,7 +164,7 @@
                   <img
                     src="img/hero-mobile.png"
                     alt="hero preview"
-                    class="hero-image"
+                    class="hero__image"
                   />
                 </picture>
               </div>
@@ -173,7 +173,7 @@
         </div>
       </section>
 
-      <section class="logo__cloud">
+      <section class="logo-cloud">
         <div class="container-xxl">
           <div class="d-flex flex-column gap-lg py-space-2xl">
             <p class="ag-paragraph m-0">Trusted by:</p>
@@ -203,11 +203,11 @@
         </div>
       </section>
 
-      <section id="benefits" class="pb-space-6xl">
+      <section id="benefits" class="benefits pb-space-6xl">
         <div class="container-xxl">
-          <div class="section-divider"></div>
+          <div class="divider"></div>
           <div
-            class="content d-flex flex-column gap-3xl pt-space-4xl pb-space-3xl"
+            class="benefits__content d-flex flex-column gap-3xl pt-space-4xl pb-space-3xl"
           >
             <div class="d-flex flex-column gap-3xl">
               <p class="ag-captions m-0">Benefits</p>
@@ -220,9 +220,11 @@
             <div class="row pt-space-xl">
               <div class="col-12 col-md-6 col-lg-3">
                 <div
-                  class="py-space-xl pr-space-xs border-top d-flex flex-column gap-md"
+                  class="benefits__item py-space-xl pr-space-xs d-flex flex-column gap-md"
                 >
-                  <span class="material-symbols-outlined"> cable </span>
+                  <span class="benefits__icon material-symbols-outlined">
+                    cable
+                  </span>
                   <h5 class="ag-heading--3 m-0">Amplify Insights</h5>
                   <p class="ag-paragraph m-0">
                     Unlock data-driven decisions with comprehensive analytics,
@@ -233,9 +235,9 @@
 
               <div class="col-12 col-md-6 col-lg-3">
                 <div
-                  class="py-space-xl pr-space-xs border-top d-flex flex-column gap-md"
+                  class="benefits__item py-space-xl pr-space-xs d-flex flex-column gap-md"
                 >
-                  <i class="bi bi-globe-americas"></i>
+                  <i class="benefits__icon bi bi-globe-americas"></i>
                   <h5 class="ag-heading--3 m-0">
                     Control Your Global Presence
                   </h5>
@@ -248,9 +250,9 @@
 
               <div class="col-12 col-md-6 col-lg-3">
                 <div
-                  class="py-space-xl pr-space-xs border-top d-flex flex-column gap-md"
+                  class="benefits__item py-space-xl pr-space-xs d-flex flex-column gap-md"
                 >
-                  <i class="bi bi-person-lines-fill"></i>
+                  <i class="benefits__icon bi bi-person-lines-fill"></i>
                   <h5 class="ag-heading--3 m-0">Remove Language Barriers</h5>
                   <p class="ag-paragraph m-0">
                     Adapt to diverse markets with built-in localization for
@@ -261,9 +263,9 @@
 
               <div class="col-12 col-md-6 col-lg-3">
                 <div
-                  class="py-space-xl pr-space-xs border-top d-flex flex-column gap-md"
+                  class="benefits__item py-space-xl pr-space-xs d-flex flex-column gap-md"
                 >
-                  <i class="bi bi-graph-up"></i>
+                  <i class="benefits__icon bi bi-graph-up"></i>
                   <h5 class="ag-heading--3 m-0">Visualize Growth</h5>
                   <p class="ag-paragraph m-0">
                     Generate precise, visually compelling reports that
@@ -275,8 +277,12 @@
           </div>
 
           <div class="container-xxl px-0">
-            <div class="benefits-hero radius-lg overflow-hidden">
-              <img src="img/benefits__hero-image.png" alt="" />
+            <div class="benefits__media radius-lg overflow-hidden">
+              <img
+                src="img/benefits__hero-image.png"
+                alt=""
+                class="benefits__image"
+              />
             </div>
           </div>
         </div>
@@ -285,8 +291,8 @@
       <section class="features pb-space-6xl">
         <div class="container-xxl">
           <div class="row align-items-center">
-            <div class="col-12 col-xl-6 content-block">
-              <div class="section-divider"></div>
+            <div class="col-12 col-xl-6 features__content">
+              <div class="divider"></div>
               <div class="d-flex flex-column gap-2xl pt-space-3xl pb-space-4xl">
                 <div class="d-flex flex-column gap-2xl pr-space-4xl">
                   <h2 class="ag-heading--1 m-0">See the Big Picture</h2>
@@ -296,41 +302,41 @@
                   </p>
                 </div>
 
-                <ul class="feature-list d-flex flex-column list-unstyled m-0">
+                <ul class="features__list d-flex flex-column list-unstyled m-0">
                   <li
-                    class="feature-item d-flex gap-xl py-space-xs pr-space-4xl"
+                    class="features__item d-flex gap-xl py-space-xs pr-space-4xl"
                   >
                     <span class="ag-paragraph fw-bold">01</span>
-                    <p class="ag-paragraph m-0">
+                    <p class="features__text ag-paragraph m-0">
                       Spot Trends in Seconds: No more digging through numbers.
                     </p>
                   </li>
 
                   <li
-                    class="feature-item d-flex gap-xl py-space-xs pr-space-4xl"
+                    class="features__item d-flex gap-xl py-space-xs pr-space-4xl"
                   >
                     <span class="ag-paragraph fw-bold">02</span>
-                    <p class="ag-paragraph m-0">
+                    <p class="features__text ag-paragraph m-0">
                       Get Everyone on the Same Page: Share easy-to-understand
                       reports with your team.
                     </p>
                   </li>
 
                   <li
-                    class="feature-item d-flex gap-xl py-space-xs pr-space-4xl"
+                    class="features__item d-flex gap-xl py-space-xs pr-space-4xl"
                   >
                     <span class="ag-paragraph fw-bold">03</span>
-                    <p class="ag-paragraph m-0">
+                    <p class="features__text ag-paragraph m-0">
                       Make Presentations Pop: Interactive maps and dashboards
                       keep your audience engaged.
                     </p>
                   </li>
 
                   <li
-                    class="feature-item d-flex gap-xl py-space-xs pr-space-4xl"
+                    class="features__item d-flex gap-xl py-space-xs pr-space-4xl"
                   >
                     <span class="ag-paragraph fw-bold">04</span>
-                    <p class="ag-paragraph m-0">
+                    <p class="features__text ag-paragraph m-0">
                       Your Global Snapshot: Get a quick, clear overview of your
                       entire operation.
                     </p>
@@ -349,11 +355,11 @@
             </div>
 
             <div class="col-12 col-xl-6">
-              <div class="image-wrapper">
+              <div class="features__media">
                 <img
                   src="img/Features carousel v1.png"
-                  alt="See the Big Picture"
-                  class="w-100 radius-lg"
+                  alt=""
+                  class="features__image w-100 radius-lg"
                 />
               </div>
             </div>
@@ -361,14 +367,14 @@
         </div>
       </section>
 
-      <section id="specs" class="specs-section">
+      <section id="specs" class="specs">
         <div class="container-xxl">
-          <div class="section-divider"></div>
+          <div class="divider"></div>
           <div class="d-flex flex-column gap-sm pb-space-6xl">
             <div
-              class="specs-head text-center d-flex flex-column gap-2xl py-space-4xl px-space-6xl"
+              class="specs__head text-center d-flex flex-column gap-2xl py-space-4xl px-space-6xl"
             >
-              <span class="ag-captions">Specs</span>
+              <span class="specs__title ag-captions">Specs</span>
 
               <h2 class="ag-heading--1">Why Choose Area?</h2>
 
@@ -385,9 +391,9 @@
               </a>
             </div>
 
-            <div class="comparison-scroll border rounded">
+            <div class="specs__scroll border rounded">
               <div class="row flex-nowrap">
-                <div class="col-12 col-md-4 p-0 border-end">
+                <div class="col-12 col-md-4 p-0 border-end specs__column-wrapper">
                   <div
                     class="ag-table-title text-center py-space-xl px-space-lg"
                   >
@@ -434,7 +440,7 @@
                   </ul>
                 </div>
 
-                <div class="col-12 col-md-4 p-0 border-end">
+                <div class="col-12 col-md-4 p-0 border-end specs__column-wrapper">
                   <div
                     class="ag-table-title text-center py-space-xl px-space-lg"
                   >
@@ -481,7 +487,7 @@
                   </ul>
                 </div>
 
-                <div class="col-12 col-md-4 p-0">
+                <div class="col-12 col-md-4 p-0 specs__column-wrapper">
                   <div
                     class="ag-table-title text-center py-space-xl px-space-lg"
                   >
@@ -536,9 +542,9 @@
       <section class="testimonial">
         <div class="container-xxl">
           <div
-            class="testimonial-layout d-flex flex-column flex-xl-row pb-space-6xl gap-sm"
+            class="testimonial__layout d-flex flex-column flex-xl-row pb-space-6xl gap-sm"
           >
-            <div class="testimonial-media w-100 w-lg-50">
+            <div class="testimonial__media w-100 w-lg-50">
               <picture>
                 <source
                   srcset="img/testimonial.png"
@@ -558,11 +564,11 @@
               </picture>
             </div>
 
-            <div class="testimonial-content w-100 w-lg-50">
-              <div class="testimonial-divider"></div>
+            <div class="testimonial__content d-flex flex-column w-100 w-lg-50">
+              <div class="testimonial__divider"></div>
 
-              <div class="testimonial-body pl-space-2xl">
-                <div class="testimonial-inner d-flex flex-column gap-3xl">
+              <div class="testimonial__body pl-space-2xl">
+                <div class="testimonial__inner d-flex flex-column gap-3xl">
                   <blockquote class="testimonial__quote m-0">
                     <p class="ag-heading--2 m-0">
                       “I was skeptical, but Area has completely transformed the
@@ -585,9 +591,9 @@
         </div>
       </section>
 
-      <section id="steps">
+      <section id="steps" class="steps">
         <div class="container-xxl pb-space-6xl">
-          <div class="section-divider"></div>
+          <div class="divider"></div>
           <div
             class="row py-space-4xl d-flex flex-column flex-md-row gap-2xl align-items-start align-items-md-center"
           >
@@ -606,10 +612,10 @@
 
           <div class="steps__scroll">
             <div class="row flex-nowrap">
-              <div class="col-12 col-md-4 step-col">
-                <div class="section-divider"></div>
+              <div class="col-12 col-md-4 steps__col">
+                <div class="divider"></div>
                 <div
-                  class="step-item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
+                  class="steps__item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
                 >
                   <div class="ag-display--stats">01</div>
 
@@ -623,10 +629,10 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 step-col">
-                <div class="section-divider"></div>
+              <div class="col-12 col-md-4 steps__col">
+                <div class="divider"></div>
                 <div
-                  class="step-item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
+                  class="steps__item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
                 >
                   <div class="ag-display--stats">02</div>
 
@@ -641,10 +647,10 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-4 step-col">
-                <div class="section-divider"></div>
+              <div class="col-12 col-md-4 steps__col">
+                <div class="divider"></div>
                 <div
-                  class="step-item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
+                  class="steps__item d-flex flex-column gap-5xl pt-space-3xl pb-space-sm pr-space-lg"
                 >
                   <div class="ag-display--stats">03</div>
 
@@ -663,11 +669,11 @@
 
       <section class="image-section pb-space-xl">
         <div class="container-xxl">
-          <div class="image-section__image overflow-hidden radius-lg">
+          <div class="image-section__media overflow-hidden radius-lg">
             <img
               src="img/Hero-road-desctop.png"
               alt="Landscape view"
-              class="img-fluid w-100"
+              class="image-section__image img-fluid w-100"
             />
           </div>
         </div>
@@ -675,7 +681,7 @@
 
       <section id="connect">
         <div class="container-xxl">
-          <div class="section-divider"></div>
+          <div class="divider"></div>
           <div
             class="connect__content d-flex flex-column text-center py-space-6xl px-space-pill gap-2xl"
           >
@@ -687,9 +693,9 @@
 
             <a
               href="#"
-              class="btn btn-custom d-inline-flex justify-content-center align-items-center gap-xxxs ag-link"
+              class="btn btn-cta d-inline-flex justify-content-center align-items-center gap-xxxs ag-link"
               >Learn More
-              <img class="header_arrow" src="img/arrow.png" alt="" />
+              <img class="btn-cta__arrow" src="img/arrow.png" alt="" />
             </a>
           </div>
         </div>
@@ -698,7 +704,7 @@
 
     <section class="footer pb-space-xs">
       <div class="container-xxl">
-        <div class="section-divider"></div>
+        <div class="divider"></div>
         <div
           class="footer-content d-flex flex-column pt-space-xl pb-space-xs gap-5xl"
         >
