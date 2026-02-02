@@ -154,6 +154,9 @@ header .navbar .nav-links-wrapper {
 .specs__column-wrapper.is-active .specs__column {
   border-radius: 0 0 20px 20px;
 }
+.specs__text {
+  color: var(--color-headline);
+}
 
 .testimonial__divider {
   width: 100%;
