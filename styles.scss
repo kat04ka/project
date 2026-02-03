@@ -10,12 +10,14 @@
 
 .theme-toggle {
   &:checked + header {
-    .icon-light {
-      display: none;
-    }
+    .theme-switch {
+      .icon-light {
+        display: none;
+      }
 
-    .icon-dark {
-      display: inline;
+      .icon-dark {
+        display: inline;
+      }
     }
   }
 }
@@ -326,13 +328,7 @@ header {
   }
 }
 
-@media (max-width: 990px) {
-  .btn.theme-switch.btn-lg {
-    padding: 4px 12px;
-  }
-}
-
-@media (max-width: 785px) {
+@include media.down(breakpoints.$sm) {
   .pr-space-4xl {
     padding-right: 0;
   }
