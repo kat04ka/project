@@ -1,5 +1,7 @@
 @use "scss/components/divider";
 @use "scss/components/buttons";
+@use "scss/breakpoints";
+@use "scss/media";
 
 * {
   margin: 0;
@@ -48,7 +50,7 @@ header {
     bottom: 0;
     width: 100%;
     height: 362px;
-    background-color: #8f9f7a;
+    background-color: #8e9c78;
     border-radius: 32px;
     z-index: 1;
   }
@@ -60,6 +62,14 @@ header {
     height: 475px;
     overflow: hidden;
     z-index: 2;
+
+    @include media.down(breakpoints.$xl) {
+      max-width: 655px;
+    }
+
+    @include media.down(breakpoints.$sm) {
+      max-width: 270px;
+    }
   }
 
   &__image {
@@ -72,6 +82,14 @@ header {
     transition:
       opacity 0.6s ease,
       transform 0.6s ease;
+
+    @include media.down(breakpoints.$xl) {
+      transform: translateY(12px);
+    }
+
+    @include media.down(breakpoints.$sm) {
+      transform: translateY(100px);
+    }
   }
 }
 
@@ -101,6 +119,10 @@ header {
     transition:
       opacity 0.6s ease,
       transform 0.6s ease;
+
+    @include media.down(breakpoints.$xl) {
+      height: auto;
+    }
   }
 
   &__item {
@@ -115,6 +137,13 @@ header {
     position: relative;
     overflow: hidden;
     height: 711px;
+
+    @include media.down(breakpoints.$xl) {
+      height: 744px;
+    }
+    @include media.down(breakpoints.$sm) {
+      height: 400px;
+    }
   }
 
   &__image {
@@ -127,6 +156,16 @@ header {
 }
 
 .specs {
+  &__head {
+    @include media.down(breakpoints.$xl) {
+      padding: var(--space-4xl);
+    }
+
+    @include media.down(breakpoints.$sm) {
+      padding: var(--space-4xl) var(--space-xxs);
+    }
+  }
+
   &__title {
     color: var(--color-headline);
   }
@@ -175,18 +214,26 @@ header {
 }
 
 .testimonial {
+  &__content {
+    @include media.down(breakpoints.$xl) {
+      height: 376px;
+    }
+  }
+
   &__divider {
     width: 100%;
     height: 1px;
     background: var(--color-divider-1);
-    transform: scaleY(0.5);
-    transform-origin: top;
     flex-shrink: 0;
   }
 
   &__body {
     flex: 1;
     display: flex;
+
+    @include media.down(breakpoints.$xl) {
+      padding-left: 0;
+    }
   }
 
   &__inner {
@@ -194,6 +241,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &__text {
+    @include media.down(breakpoints.$sm) {
+      font-size: 32px;
+    }
   }
 }
 
@@ -237,38 +290,6 @@ header {
 }
 
 @media (max-width: 1200px) {
-  .hero__mask {
-    max-width: 655px;
-  }
-
-  .hero__image {
-    transform: translateY(10px);
-  }
-
-  .features__content {
-    height: auto;
-  }
-
-  .image-wrapper {
-    height: 744px;
-  }
-
-  .testimonial__image-wrapper {
-    height: 100%;
-  }
-
-  .testimonial__body {
-    padding-left: 0;
-  }
-
-  .testimonial__content {
-    height: 376px;
-  }
-
-  .specs__head {
-    padding: var(--space-4xl);
-  }
-
   .connect__content {
     padding-left: var(--space-5xl);
     padding-right: var(--space-5xl);
@@ -288,31 +309,12 @@ header {
 }
 
 @media (max-width: 785px) {
-  .nav-links-wrapper {
-    position: block;
-  }
-
   .ag-display {
     font-size: 76px;
   }
 
-  .hero__mask {
-    max-width: 270px;
-  }
-
-  .hero__image {
-    transform: translateY(100px);
-  }
-
-  .image-wrapper {
-    height: 400px;
-  }
-
   .steps__col {
     max-width: 300px;
-  }
-  .specs__head {
-    padding: var(--space-4xl) var(--space-xxs);
   }
 
   .specs__column-wrapper {
@@ -328,17 +330,7 @@ header {
     width: 267px;
   }
 
-  .testimonial__content {
-    height: 100%;
-  }
-
-  .testimonial__quote .ag-heading--2 {
-    padding-top: var(--space-xl);
-    font-size: var(--ag-logo-size);
-  }
-
-  .ag-heading--1,
-  .ag-heading--2 {
+  .ag-heading--1 {
     font-size: var(--responsive-font-size);
   }
 
