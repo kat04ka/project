@@ -211,6 +211,11 @@ header .navbar .nav-links-wrapper {
 .specs__column-wrapper.is-active .specs__column {
   border-radius: 0 0 20px 20px;
 }
+@media (max-width: 785px) {
+  .specs__column-wrapper {
+    width: 267px;
+  }
+}
 .specs__text {
   color: var(--color-headline);
 }
@@ -306,10 +311,6 @@ header .navbar .nav-links-wrapper {
   }
 }
 @media (max-width: 785px) {
-  .specs__column-wrapper {
-    width: 267px;
-    max-width: 267px;
-  }
   .pr-space-4xl {
     padding-right: 0;
   }
