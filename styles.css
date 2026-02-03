@@ -32,6 +32,20 @@
   padding: 0;
 }
 
+.theme-switch {
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+.theme-switch .icon-dark {
+  display: none;
+}
+@media (max-width: 990px) {
+  .theme-switch {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
+
 .theme-toggle:checked + header .theme-switch .icon-light {
   display: none;
 }
