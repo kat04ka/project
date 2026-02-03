@@ -38,6 +38,15 @@ header {
 }
 
 .hero {
+  &__heading {
+    @include media.down(breakpoints.$lg) {
+      font-size: 90px;
+    }
+    @include media.down(breakpoints.$sm) {
+      font-size: 76px;
+    }
+  }
+
   &__visual {
     position: relative;
     display: flex;
@@ -273,6 +282,16 @@ header {
     &:last-child {
       padding-right: 0;
     }
+
+    @include media.down(breakpoints.$sm) {
+      width: 300px;
+    }
+  }
+
+  &__number {
+    @include media.down(breakpoints.$md) {
+      font-size: var(--ag-heading-1-size);
+    }
   }
 }
 
@@ -289,16 +308,17 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
-  .connect__content {
-    padding-left: var(--space-5xl);
-    padding-right: var(--space-5xl);
-  }
-}
+.connect {
+  &__content {
+    @include media.down(breakpoints.$xl) {
+      padding-left: var(--space-5xl);
+      padding-right: var(--space-5xl);
+    }
 
-@media (max-width: 1150px) {
-  .ag-display {
-    font-size: 90px;
+    @include media.down(breakpoints.$sm) {
+      padding-left: var(--space-xxs);
+      padding-right: var(--space-xxs);
+    }
   }
 }
 
@@ -309,14 +329,6 @@ header {
 }
 
 @media (max-width: 785px) {
-  .ag-display {
-    font-size: 76px;
-  }
-
-  .steps__col {
-    max-width: 300px;
-  }
-
   .specs__column-wrapper {
     width: 267px;
     max-width: 267px;
@@ -326,20 +338,7 @@ header {
     padding-right: 0;
   }
 
-  .steps__scroll .col-12 {
-    width: 267px;
-  }
-
   .ag-heading--1 {
     font-size: var(--responsive-font-size);
-  }
-
-  .ag-display--stats {
-    font-size: var(--ag-heading-1-size);
-  }
-
-  .connect__content {
-    padding-left: var(--space-xxs);
-    padding-right: var(--space-xxs);
   }
 }
