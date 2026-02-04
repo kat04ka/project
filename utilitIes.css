@@ -1,7 +1,4 @@
-/* ===================================== */
 /* PADDING — ALL */
-/* ===================================== */
-
 .p-space-xxs { padding: var(--space-xxs); }
 .p-space-xs  { padding: var(--space-xs); }
 .p-space-sm  { padding: var(--space-sm); }
@@ -13,10 +10,7 @@
 .p-space-4xl { padding: var(--space-4xl); }
 .p-space-6xl { padding: var(--space-6xl); }
 
-/* ===================================== */
 /* PADDING — TOP */
-/* ===================================== */
-
 .pt-space-xxs { padding-top: var(--space-xxs); }
 .pt-space-xs  { padding-top: var(--space-xs); }
 .pt-space-sm  { padding-top: var(--space-sm); }
@@ -28,10 +22,7 @@
 .pt-space-4xl { padding-top: var(--space-4xl); }
 .pt-space-6xl { padding-top: var(--space-6xl); }
 
-/* ===================================== */
 /* PADDING — BOTTOM */
-/* ===================================== */
-
 .pb-space-xxs { padding-bottom: var(--space-xxs); }
 .pb-space-xs  { padding-bottom: var(--space-xs); }
 .pb-space-sm  { padding-bottom: var(--space-sm); }
@@ -43,10 +34,7 @@
 .pb-space-4xl { padding-bottom: var(--space-4xl); }
 .pb-space-6xl { padding-bottom: var(--space-6xl); }
 
-/* ===================================== */
 /* PADDING — LEFT */
-/* ===================================== */
-
 .pl-space-xxs { padding-left: var(--space-xxs); }
 .pl-space-xs  { padding-left: var(--space-xs); }
 .pl-space-sm  { padding-left: var(--space-sm); }
@@ -58,10 +46,7 @@
 .pl-space-4xl { padding-left: var(--space-4xl); }
 .pl-space-6xl { padding-left: var(--space-6xl); }
 
-/* ===================================== */
 /* PADDING — RIGHT */
-/* ===================================== */
-
 .pr-space-xxs { padding-right: var(--space-xxs); }
 .pr-space-xs  { padding-right: var(--space-xs); }
 .pr-space-sm  { padding-right: var(--space-sm); }
@@ -73,10 +58,7 @@
 .pr-space-4xl { padding-right: var(--space-4xl); }
 .pr-space-6xl { padding-right: var(--space-6xl); }
 
-/* ===================================== */
 /* PADDING — AXIS */
-/* ===================================== */
-
 .px-space-xxs { padding-left: var(--space-xxs); padding-right: var(--space-xxs); }
 .px-space-xs  { padding-left: var(--space-xs);  padding-right: var(--space-xs); }
 .px-space-sm  { padding-left: var(--space-sm);  padding-right: var(--space-sm); }
@@ -97,10 +79,7 @@
 .py-space-4xl  { padding-top: var(--space-4xl);  padding-bottom: var(--space-4xl); }
 .py-space-6xl  { padding-top: var(--space-6xl);  padding-bottom: var(--space-6xl); }
 
-/* ===================================== */
 /* GAP (flex / grid) */
-/* ===================================== */
-
 .gap-xxxs { gap: var(--gap-xxxs); }
 .gap-xxs { gap: var(--gap-xxs); }
 .gap-xs  { gap: var(--gap-xs); }
@@ -114,10 +93,7 @@
 .gap-5xl { gap: var(--gap-5xl); }
 .gap-pill { gap: var(--gap-pill);}
 
-/* ===================================== */
 /* RADIUS */
-/* ===================================== */
-
 .radius-sm   { border-radius: var(--radius-sm); }
 .radius-md   { border-radius: var(--radius-md); }
 .radius-lg   { border-radius: var(--radius-lg); }
