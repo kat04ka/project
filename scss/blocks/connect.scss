@@ -1,0 +1,18 @@
+@use "sass:map";
+@use "../base/variables";
+@use "../media";
+@use "../breakpoints";
+
+.connect {
+  &__content {
+    @include media.down(breakpoints.$xl) {
+      padding-left: var(--space-5xl);
+      padding-right: var(--space-5xl);
+    }
+
+    @include media.down(breakpoints.$sm) {
+      padding-left: var(--space-xxs);
+      padding-right: var(--space-xxs);
+    }
+  }
+}

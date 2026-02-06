@@ -90,6 +90,10 @@ $typography: (
   ),
 );
 
+$font-base: "DM Sans", sans-serif;
+$font-display: "Crimson Text", serif;
+$font-mono: "Roboto Mono", sans-serif;
+
 $font-families: (
   base: $font-base,
   display: $font-display,

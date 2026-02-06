@@ -1,0 +1,39 @@
+@use "../media";
+@use "../breakpoints";
+
+.testimonial {
+  &__content {
+    @include media.down(breakpoints.$xl) {
+      height: 376px;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background: var(--color-divider-1);
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+
+    @include media.down(breakpoints.$xl) {
+      padding-left: 0;
+    }
+  }
+
+  &__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__text {
+    @include media.down(breakpoints.$sm) {
+      font-size: 32px;
+    }
+  }
+}

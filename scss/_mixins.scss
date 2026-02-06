@@ -1,15 +1,18 @@
-@mixin typography-class($name, $config) {
-  font-family: map-get($font-families, map-get($config, family));
-  font-size: map-get($config, size);
-  line-height: map-get($config, line);
-  font-weight: map-get($config, weight);
-  letter-spacing: map-get($config, spacing);
+@use "./base/variables";
+@use "sass:map";
 
-  @if map-has-key($config, color) {
-    color: map-get($colors, map-get($config, color));
+@mixin typography-class($name, $config) {
+  font-family: map.get(variables.$font-families, map.get($config, family));
+  font-size: map.get($config, size);
+  line-height: map.get($config, line);
+  font-weight: map.get($config, weight);
+  letter-spacing: map.get($config, spacing);
+
+  @if map.has-key($config, color) {
+    color: map.get(variables.$colors, map.get($config, color));
   }
 
-  @if map-has-key($config, decoration) {
-    text-decoration: map-get($config, decoration);
+  @if map.has-key($config, decoration) {
+    text-decoration: map.get($config, decoration);
   }
 }

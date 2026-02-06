@@ -1,5 +1,16 @@
-@each $name, $config in $typography {
+@use "variables";
+@use "../breakpoints";
+@use "../mixins";
+@use "../media";
+
+@each $name, $config in variables.$typography {
   .ag-#{$name} {
-    @include typography-class($name, $config);
+    @include mixins.typography-class($name, $config);
+  }
+}
+
+@include media.down(breakpoints.$sm) {
+  .ag-heading--1 {
+    font-size: var(--responsive-font-size);
   }
 }

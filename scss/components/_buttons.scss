@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../base/variables";
+
 @mixin bs-button(
   $bg,
   $bg-hover,
@@ -16,8 +19,8 @@
 }
 
 .btn-cta {
-  --bs-btn-bg: var(--color-accent-1);
-  --bs-btn-hover-bg: var(--color-accent-3);
+  --bs-btn-bg: map.get(variables.$colors, accent-1);
+  --bs-btn-hover-bg: map.get(variables.$colors, accent-3);
 
   color: var(--color-on-accent-1);
   padding: var(--space-xxs) var(--space-xs);
