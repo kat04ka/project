@@ -1,0 +1,25 @@
+[data-bs-theme="dark"] {
+  --bg: #0f172a;
+  --text: #ffffff;
+
+  --compare-bg-hover: #0f172a;
+  --compare-bg-active: #111827;
+
+  --compare-shadow-hover: 0 6px 18px rgba(0, 0, 0, .6);
+  --compare-shadow-active: 0 6px 18px rgba(0, 0, 0, .8);
+
+  --compare-border-active: #1f2933;
+
+  .ag-paragraph,
+  .ag-heading--1,
+  .feature-item p.ag-paragraph,
+  .ag-captions,
+  ul.specs__column span.ag-captions,
+  .ag-heading--2,
+  .footer .ag-link,
+  .ag-table-title,
+  .navbar .nav-link.ag-link,
+  .offcanvas .nav-link.ag-link {
+    color: var(--text);
+  }
+}
