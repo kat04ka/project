@@ -1,0 +1,5 @@
+@each $name, $config in $typography {
+  .ag-#{$name} {
+    @include typography-class($name, $config);
+  }
+}

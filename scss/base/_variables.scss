@@ -1,0 +1,162 @@
+$typography: (
+  display-stats: (
+    family: base,
+    size: 80px,
+    line: 1,
+    weight: 400,
+    spacing: -0.025em,
+    color: accent-6,
+  ),
+
+  display: (
+    family: display,
+    size: 160px,
+    line: 0.9,
+    weight: 400,
+    spacing: -0.0425em,
+  ),
+
+  heading-1: (
+    family: display,
+    size: 60px,
+    line: 0.9,
+    weight: 400,
+    spacing: -0.03em,
+    color: headline,
+  ),
+
+  heading-2: (
+    family: display,
+    size: 40px,
+    line: 1,
+    weight: 400,
+    spacing: -0.04em,
+    color: headline,
+  ),
+
+  heading-3: (
+    family: display,
+    size: 18px,
+    line: 1,
+    weight: 400,
+    spacing: -0.03em,
+    color: headline,
+  ),
+
+  paragraph: (
+    family: base,
+    size: 15px,
+    line: 1.4,
+    weight: 400,
+    spacing: -0.005em,
+    color: paragraph,
+  ),
+
+  link: (
+    family: base,
+    size: 14px,
+    line: 1.4,
+    weight: 700,
+    spacing: -0.025em,
+    color: link,
+    decoration: none,
+  ),
+
+  captions: (
+    family: mono,
+    size: 12px,
+    line: 1.4,
+    weight: 400,
+    spacing: -0.001em,
+    color: captions,
+  ),
+
+  logo: (
+    family: base,
+    size: 30px,
+    line: 1.2,
+    weight: 400,
+    spacing: -0.05em,
+    color: accent-4,
+  ),
+
+  table-title: (
+    family: base,
+    size: 23px,
+    line: 1.2,
+    weight: 500,
+    spacing: -0.08em,
+    color: accent-5,
+  ),
+);
+
+$font-families: (
+  base: $font-base,
+  display: $font-display,
+  mono: $font-mono
+);
+
+$colors: (
+  //base
+  background-1: #ffffff,
+  text-primary: #000000,
+
+  //accents
+  accent-1: #485c11,
+  accent-2: #dfecc6,
+  accent-3: #8e9c78,
+  accent-4: #000000,
+  accent-5: #6f6f6f,
+  accent-6: #929292,
+
+  //text
+  headline: #000000,
+  paragraph: #6f6f6f,
+  captions: #485c11,
+  link: #000000,
+  on-accent-1: #ffffff,
+
+  //divider
+  divider-1: #e9e9e9
+);
+
+$spaces: (
+  //padding
+  xxs: 14px,
+  xs: 20px,
+  sm: 22px,
+  md: 24px,
+  lg: 30px,
+  xl: 40px,
+  2xl: 50px,
+  3xl: 60px,
+  4xl: 80px,
+  5xl: 100px,
+  6xl: 120px,
+  7xl: 240px,
+  pill: 300px
+);
+
+//gap
+$gaps: (
+  xxxs: 2px,
+  xxs: 8px,
+  xs: 10px,
+  sm: 20px,
+  md: 24px,
+  lg: 27px,
+  xl: 30px,
+  2xl: 40px,
+  3xl: 50px,
+  4xl: 60px,
+  5xl: 80px,
+  pill: 240px
+);
+
+//radius
+$radii: (
+  sm: 20px,
+  md: 24px,
+  lg: 30px,
+  pill: 100px
+);
