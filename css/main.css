@@ -747,7 +747,7 @@ header .navbar .nav-links-wrapper {
   border-top: 1px solid #e9e9e9;
 }
 .features__text {
-  color: var(--color-headline);
+  color: #000000;
 }
 .features__media {
   position: relative;
@@ -892,16 +892,10 @@ header .navbar .nav-links-wrapper {
   object-fit: cover;
 }
 
-@media (max-width: 1200px) {
-  .connect__content {
-    padding-left: var(--space-5xl);
-    padding-right: var(--space-5xl);
-  }
-}
 @media (max-width: 785px) {
   .connect__content {
-    padding-left: var(--space-xxs);
-    padding-right: var(--space-xxs);
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
 

@@ -1,5 +1,5 @@
-@use "./base/variables";
 @use "sass:map";
+@use "./base/variables";
 
 @mixin typography-class($name, $config) {
   font-family: map.get(variables.$font-families, map.get($config, family));

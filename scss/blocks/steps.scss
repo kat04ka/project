@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../base/variables";
-@use "../media";
 @use "../breakpoints";
+@use "../media";
 
 .steps {
   &__scroll {

@@ -7,13 +7,13 @@
 .connect {
   &__content {
     @include media.down(breakpoints.$xl) {
-      padding-left: var(--space-5xl);
-      padding-right: var(--space-5xl);
+      padding-left: map.get(variables.$spaces, "5xl");
+      padding-right: map.get(variables.$spaces, "5xl");
     }
 
     @include media.down(breakpoints.$sm) {
-      padding-left: var(--space-xxs);
-      padding-right: var(--space-xxs);
+      padding-left: map.get(variables.$spaces, "xxs");
+      padding-right: map.get(variables.$spaces, "xxs");
     }
   }
 }
