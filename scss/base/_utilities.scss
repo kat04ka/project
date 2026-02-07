@@ -1,0 +1,36 @@
+@use "variables";
+@use "../media";
+@use "../breakpoints";
+
+// pading
+@each $name, $value in variables.$spaces {
+  .p-space-#{$name}  { padding: $value; }
+  .pt-space-#{$name} { padding-top: $value; }
+  .pb-space-#{$name} { padding-bottom: $value; }
+  .pl-space-#{$name} { padding-left: $value; }
+  .pr-space-#{$name} { padding-right: $value; }
+
+  .px-space-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-space-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+//gap
+@each $name, $value in variables.$gaps {
+  .gap-#{$name} {
+    gap: $value;
+  }
+}
+
+//radius
+@each $name, $value in variables.$radii {
+  .radius-#{$name} {
+    border-radius: $value;
+  }
+}

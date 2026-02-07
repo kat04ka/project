@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const columns = document.querySelectorAll(".comparison-scroll .col-md-4");
+  const columns = document.querySelectorAll(".specs__scroll .col-md-4");
   let activeColumn = document.querySelector(
-    ".comparison-scroll .col-md-4.is-active"
+    ".specs__scroll .col-md-4.is-active"
   );
 
   const isDesktop = () => window.matchMedia("(min-width: 1200px)").matches;

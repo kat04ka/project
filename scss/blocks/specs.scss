@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "../base/variables";
+@use "../media";
+@use "../breakpoints";
+
+.specs {
+  &__head {
+    @include media.down(breakpoints.$xl) {
+      padding: map.get(variables.$spaces, 4xl);
+    }
+
+    @include media.down(breakpoints.$sm) {
+      padding: map.get(variables.$spaces, 4xl) map.get(variables.$spaces, xxs);
+    }
+  }
+
+  &__scroll {
+    overflow-x: auto;
+  }
+
+  &__scroll .row {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__column-wrapper {
+    position: relative;
+    cursor: pointer;
+    min-width: 267px;
+    flex: 0 0 auto;
+
+    &:hover .ag-table-title,
+    &:hover .specs__column {
+      background-color: var(--compare-bg-hover);
+      box-shadow: var(--compare-shadow-hover);
+    }
+
+    &.is-active .ag-table-title,
+    &.is-active .specs__column {
+      background-color: var(--compare-bg-active);
+      box-shadow: var(--compare-shadow-active);
+      border: none;
+    }
+
+    &.is-active .ag-table-title {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &.is-active .specs__column {
+      border-radius: 0 0 20px 20px;
+    }
+
+    @include media.down(breakpoints.$sm) {
+      width: 267px;
+    }
+  }
+
+  &__text {
+    color: map.get(variables.$colors, headline);
+  }
+}
