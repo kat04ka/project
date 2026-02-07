@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../base/variables";
 @use "../media";
 @use "../breakpoints";
 
@@ -32,7 +34,7 @@
 
   &__number {
     @include media.down(breakpoints.$md) {
-      font-size: var(--ag-heading-1-size);
+      font-size: 64px;
     }
   }
 }

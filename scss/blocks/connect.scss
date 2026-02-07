@@ -2,6 +2,7 @@
 @use "../base/variables";
 @use "../media";
 @use "../breakpoints";
+@use "../components/buttons";
 
 .connect {
   &__content {

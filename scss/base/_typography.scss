@@ -10,7 +10,7 @@
 }
 
 @include media.down(breakpoints.$sm) {
-  .ag-heading--1 {
-    font-size: var(--responsive-font-size);
+  .ag-heading-1 {
+    font-size: 50px;
   }
 }

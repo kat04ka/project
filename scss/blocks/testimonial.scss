@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../base/variables";
 @use "../media";
 @use "../breakpoints";
 
@@ -11,7 +13,7 @@
   &__divider {
     width: 100%;
     height: 1px;
-    background: var(--color-divider-1);
+    background: map.get(variables.$colors, divider-1);
     flex-shrink: 0;
   }
 

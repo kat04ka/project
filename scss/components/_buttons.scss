@@ -4,34 +4,40 @@
 @mixin bs-button(
   $bg,
   $bg-hover,
-  $border: transparent
+  $border: transparent,
+  $border-width: 0
 ) {
   --bs-btn-bg: #{$bg};
   --bs-btn-hover-bg: #{$bg-hover};
   --bs-btn-border-color: #{$border};
+  --bs-btn-border-width: #{$border-width};
 }
 
 .btn-secondary {
   @include bs-button(
-    var(--color-accent-2),
-    var(--color-accent-3)
+    map.get(variables.$colors, accent-2),
+    map.get(variables.$colors, accent-3),
   );
 }
 
 .btn-cta {
-  --bs-btn-bg: map.get(variables.$colors, accent-1);
-  --bs-btn-hover-bg: map.get(variables.$colors, accent-3);
+  --bs-btn-bg: #{map.get(variables.$colors, accent-1)};
+  --bs-btn-hover-bg: #{map.get(variables.$colors, accent-3)};
+  --bs-btn-color: #{map.get(variables.$colors, on-accent-1)};
 
-  color: var(--color-on-accent-1);
-  padding: var(--space-xxs) var(--space-xs);
-  border-radius: var(--radius-pill);
+  padding: map.get(variables.$spaces, xxs) map.get(variables.$spaces, xs);
+  border-radius: map.get(variables.$radii, pill);
+
+  &.ag-link {
+    color: var(--bs-btn-color);
+  }
 
   &__arrow {
     transition: transform 0.2s ease-out;
   }
 
   &:hover {
-    color: var(--color-on-accent-1);
+    color: #{map.get(variables.$colors, on-accent-1)};
 
     .btn-cta__arrow {
       transform: translateY(-4px);
