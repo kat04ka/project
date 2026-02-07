@@ -892,7 +892,7 @@ header .navbar .nav-links-wrapper {
   object-fit: cover;
 }
 
-@media (max-width: 785px) {
+@media (max-width: 990px) {
   .connect__content {
     padding-left: 14px;
     padding-right: 14px;
