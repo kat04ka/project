@@ -32,15 +32,14 @@
 
     &:hover .ag-table-title,
     &:hover .specs__column {
-      background-color: var(--compare-bg-hover);
-      box-shadow: var(--compare-shadow-hover);
+      background-color: var(--spec-bg-hover);
+      box-shadow: var(--spec-shadow-hover);
     }
 
     &.is-active .ag-table-title,
     &.is-active .specs__column {
-      background-color: var(--compare-bg-active);
-      box-shadow: var(--compare-shadow-active);
-      border: none;
+      background-color: var(--spec-bg-active);
+      box-shadow: var(--spec-shadow-active);
     }
 
     &.is-active .ag-table-title {
