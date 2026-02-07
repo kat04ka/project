@@ -34,3 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const offcanvasEl = document.getElementById("mobileNav");
+  const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+
+  const mobileLinks = offcanvasEl.querySelectorAll(".js-scroll");
+
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      offcanvas.hide();
+    });
+  });
+});
