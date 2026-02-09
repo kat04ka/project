@@ -653,7 +653,7 @@ header .navbar .nav-links-wrapper {
   border-radius: 100px;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1160px) {
   .hero__heading {
     font-size: 90px;
   }
