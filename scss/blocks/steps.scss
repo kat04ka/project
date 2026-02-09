@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "../base/variables";
+@use "../breakpoints";
+@use "../media";
+
+.steps {
+  &__scroll {
+    overflow-x: auto;
+  }
+
+  &__scroll .row {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__col {
+    min-width: 300px;
+    position: relative;
+    cursor: pointer;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @include media.down(breakpoints.$sm) {
+      width: 300px;
+    }
+  }
+
+  &__number {
+    @include media.down(breakpoints.$md) {
+      font-size: 64px;
+    }
+  }
+}

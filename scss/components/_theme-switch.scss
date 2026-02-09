@@ -1,0 +1,30 @@
+@use "../media";
+@use "../breakpoints";
+
+.theme-switch {
+  padding: 12px 16px;
+  font-size: 1rem;
+
+  .icon-dark {
+    display: none;
+  }
+
+  @include media.down(breakpoints.$md) {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+  }
+}
+
+.theme-toggle {
+  &:checked + header {
+    .theme-switch {
+      .icon-light {
+        display: none;
+      }
+
+      .icon-dark {
+        display: inline;
+      }
+    }
+  }
+}

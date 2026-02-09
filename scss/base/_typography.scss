@@ -1,0 +1,16 @@
+@use "variables";
+@use "../breakpoints";
+@use "../mixins";
+@use "../media";
+
+@each $name, $config in variables.$typography {
+  .ag-#{$name} {
+    @include mixins.typography-class($name, $config);
+  }
+}
+
+@include media.down(breakpoints.$sm) {
+  .ag-heading-1 {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "../base/variables";
+@use "../media";
+@use "../breakpoints";
+@use "../components/buttons";
+
+.connect {
+  &__content {
+    @include media.down(breakpoints.$xl) {
+      padding-left: map.get(variables.$spaces, "5xl");
+      padding-right: map.get(variables.$spaces, "5xl");
+    }
+
+    @include media.down(breakpoints.$md) {
+      padding-left: map.get(variables.$spaces, "xxs");
+      padding-right: map.get(variables.$spaces, "xxs");
+    }
+  }
+}

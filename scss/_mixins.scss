@@ -1,0 +1,18 @@
+@use "sass:map";
+@use "./base/variables";
+
+@mixin typography-class($name, $config) {
+  font-family: map.get(variables.$font-families, map.get($config, family));
+  font-size: map.get($config, size);
+  line-height: map.get($config, line);
+  font-weight: map.get($config, weight);
+  letter-spacing: map.get($config, spacing);
+
+  @if map.has-key($config, color) {
+    color: map.get(variables.$colors, map.get($config, color));
+  }
+
+  @if map.has-key($config, decoration) {
+    text-decoration: map.get($config, decoration);
+  }
+}
