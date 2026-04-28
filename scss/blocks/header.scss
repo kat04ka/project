@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "../base/variables";
+@use "../components/buttons";
+
+header {
+  position: relative;
+
+  .icon-dark {
+    display: none;
+  }
+
+  .navbar {
+    .nav-links-wrapper {
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: map.get(variables.$radii, pill);
+    }
+  }
+}
