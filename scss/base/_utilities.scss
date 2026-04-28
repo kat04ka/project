@@ -4,11 +4,21 @@
 
 // pading
 @each $name, $value in variables.$spaces {
-  .p-space-#{$name}  { padding: $value; }
-  .pt-space-#{$name} { padding-top: $value; }
-  .pb-space-#{$name} { padding-bottom: $value; }
-  .pl-space-#{$name} { padding-left: $value; }
-  .pr-space-#{$name} { padding-right: $value; }
+  .p-space-#{$name}  { 
+    padding: $value; 
+  }
+  .pt-space-#{$name} { 
+    padding-top: $value; 
+  }
+  .pb-space-#{$name} { 
+    padding-bottom: $value; 
+  }
+  .pl-space-#{$name} { 
+    padding-left: $value; 
+  }
+  .pr-space-#{$name} { 
+    padding-right: $value; 
+  }
 
   .px-space-#{$name} {
     padding-left: $value;
